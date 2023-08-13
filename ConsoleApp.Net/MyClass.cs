@@ -17,15 +17,15 @@ namespace ConsoleApp.Net
         {
             var type = Type.GetType($"{this.GetType().Namespace}.OtherClass");
 
-            
+
 
             //Delegate.CreateDelegate(typeof(MyDelegate)
             //     , type.GetMethod("Show"))
             //     .DynamicInvoke();
 
-            //var someClass = Activator.CreateInstance(type);
-            //var otherClass = someClass as OtherClass;
-            //otherClass.MyMethod();
+            var someClass = Activator.CreateInstance(type);
+            var otherClass = someClass as OtherClass;
+            otherClass.MyMethod();
 
 
         }
