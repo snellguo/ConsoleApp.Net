@@ -23,9 +23,8 @@ namespace ConsoleApp.Net
             //     , type.GetMethod("Show"))
             //     .DynamicInvoke();
 
-            var someClass = Activator.CreateInstance(type);
-            var otherClass = someClass as OtherClass;
-            otherClass.MyMethod();
+            var someClass = Activator.CreateInstance(type) as OtherClass;
+            someClass.MyMethod();
 
 
         }
