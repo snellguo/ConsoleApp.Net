@@ -34,6 +34,7 @@ namespace ConsoleApp.Net
 
             /* 根据字符串名称获取MyDelegate
              * 看看Delegate
+             * 不需要，委托完全可以随时声明，关联特定的类的方法。
              */
             Delegate.CreateDelegate(
                 typeof(MyDelegate)
