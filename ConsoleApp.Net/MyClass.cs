@@ -40,7 +40,6 @@ namespace ConsoleApp.Net
                , type.GetMethod("MyMethod"))
                .DynamicInvoke();
 
-
         }
         public static void MyMethod()
         {
